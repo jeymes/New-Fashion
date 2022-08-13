@@ -8,11 +8,11 @@ type  props = {
 
 export default function Banner({Banner}: props) {
     
-    const Img = {
+    const ImgBanner = {
         uri: `${Banner}`
     }
 
     return (<S.Container>
-        <S.Banner source={Img}/>
+        <S.Banner source={ImgBanner}/>
     </S.Container>)
 }

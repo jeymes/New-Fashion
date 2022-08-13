@@ -29,7 +29,7 @@ export const TextContainer = styled.Text`
 text-align: center;
 font-size: 19px;
 font-weight: 700;
-color: 	red;
+color: 	#DC143C;
 `;
 export const TextSubContainer = styled.Text`
 text-align: center;

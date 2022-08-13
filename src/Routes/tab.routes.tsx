@@ -11,7 +11,7 @@ import { Shopping } from '../Pages/Shopping';
 export function TabRoutes() {
     return (
         <Navigator screenOptions={{
-            tabBarActiveTintColor: 'red',
+            tabBarActiveTintColor: '#DC143C',
             tabBarInactiveTintColor: 'gray',
             headerShown: false
             }}
