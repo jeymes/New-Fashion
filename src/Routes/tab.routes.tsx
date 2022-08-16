@@ -31,10 +31,10 @@ export function TabRoutes() {
             <Screen name="screenB"
                 component={Search}
                 options={{
-                    tabBarLabel: 'Search',
+                    tabBarLabel: 'Favorito',
                     tabBarIcon: ({color, size}) => (
                         <MaterialIcons
-                        name='search'
+                        name='favorite'
                         color={color}
                         size={size}  />
                     )

@@ -13,6 +13,7 @@ export default function Carrousel ({Card}: props){
             keyExtractor={(_, index) => index.toString()}
             horizontal
             pagingEnabled
+            showsHorizontalScrollIndicator={false}
             renderItem={({item}) => {
                 return <S.SubContainer>
                     <S.ContainerItem>

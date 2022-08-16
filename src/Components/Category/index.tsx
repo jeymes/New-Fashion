@@ -34,7 +34,6 @@ export default function Category({
                 <MaterialIcons name={Icon}
                     color={'white'}
                     size={30}/>
-
                 <S.SubTitle>
 
                     {TitleIcon}

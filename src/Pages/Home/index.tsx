@@ -1,7 +1,9 @@
+import { ScrollView } from 'react-native';
+import Header from '../../Components/Header'
+import Carrousel from '../../Components/Carrousel'
 import Banner from '../../Components/Banner'
 import Category from '../../Components/Category'
-import Carrousel from '../../Components/Carrousel'
-import Header from '../../Components/Header'
+import ScrollCards from '../../Components/ScrollCards';
 import * as S from './styles'
 
 
@@ -27,8 +29,11 @@ export default function Home (){
     return(
         <S.Container>
             <Header/>
+            <ScrollView>
             <Carrousel Card={ImgBanners}/>
             <Carrousel Card={ CardsCategory }/>
+            <ScrollCards/>
+            </ScrollView>
         </S.Container>
     )
 }
