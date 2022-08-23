@@ -5,20 +5,35 @@ const img6 = {
 }
 
 export function Login() {
-    return (<S.Container  source={img6}>
+    return (
+        <S.Container source={img6}>
 
-        <S.SubContainer>
-            <S.TitleContainer>
-                <S.TextTitle>
-                    Login
-                </S.TextTitle>
-            </S.TitleContainer>
-            <S.TextInput  ></S.TextInput>
+            <S.SubContainer>
+                <S.TitleContainer>
+                    <S.TextTitle>
+                        Login
+                    </S.TextTitle>
+                </S.TitleContainer>
+                <S.TextInput placeholderTextColor='#fff9' placeholder="E-mail"/>
 
-            <S.TextInput></S.TextInput>
+                <S.TextInput  placeholderTextColor='#fff9' placeholder="Senha"/>
+                <S.ButtonContainer>
+                <S.Button>
+                    <S.ButtonTitle>
+                        Entrar
+                    </S.ButtonTitle>
+                </S.Button>
+                <S.Button>
+                    <S.ButtonTitle>
+                        Cadastrar
+                    </S.ButtonTitle>
+                </S.Button>
+                </S.ButtonContainer>
 
-            <S.ButtonContainer title='Entrar'
-            color='#DC143C' />
-        </S.SubContainer>
-    </S.Container>)
+                <S.TextSenha>
+                    Esqueci minha senha
+                </S.TextSenha>
+            </S.SubContainer>
+        </S.Container>
+    )
 }

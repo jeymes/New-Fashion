@@ -1,19 +1,18 @@
 import styled from "styled-components/native";
 
 export const Container = styled.View`
-width: 100%;
+padding: 5px 6px 5px;
 justify-content: center;
 align-items: center;
 `;
 export const SubContainer = styled.View`
-width: 100%;
 height: 300px;
-justify-content: space-evenly;
+justify-content: center;
 flex-direction: row;
 align-items: center;
 `;
-export const Cards = styled.View`
-width: 45%;
+export const Cards = styled.Pressable`
+width: 180px;
 height: 290px;
 border-radius: 10px;
 justify-content:space-around;
@@ -37,9 +36,10 @@ height: 25%;
 border-radius: 10px;
 justify-content: space-around;
 align-items: center;
+/* border: 1px solid red; */
 `;
 export const Description = styled.View`
-width: 90%;
+width: 100%;
 flex-direction: row;
 border-radius: 10px;
 justify-content: space-between;
@@ -51,8 +51,14 @@ font-weight: 900;
 color:  #DC143C;
 `;
 export const  Title = styled.Text`
-font-size: 12px;
+text-align: center;
+width: 100%;
+font-size: 13px;
 font-weight: 900;
+`;
+export const ContainerIcon = styled.Pressable`
+justify-content: center;
+align-items: center;
 `;
 
 

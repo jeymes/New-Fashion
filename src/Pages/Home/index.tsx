@@ -1,38 +1,54 @@
-import { ScrollView } from 'react-native';
+import {ScrollView} from 'react-native';
 import Header from '../../Components/Header'
 import Carrousel from '../../Components/Carrousel'
 import Banner from '../../Components/Banner'
 import Category from '../../Components/Category'
-import ScrollCards from '../../Components/ScrollCards';
 import * as S from './styles'
+import products from '../../data/Products';
+import Cards from '../../Components/Cards';
+
+
 
 
 const ImgBanners = [
-    <Banner Banner='https://cdn.shopify.com/s/files/1/0280/5376/6223/files/bannersite_OUTINV-Imporium.jpg?v=1648660849'/>,
-    <Banner Banner='https://cdn.dooca.store/739/files/banner-2-site-finna-moda.jpg?v=1632352601&webp=0'/>,
-    <Banner Banner='https://siberian.vteximg.com.br/arquivos/ids/180866/BANNER_MASCULINO_MOMENTOS_DESK_01.jpg?v=637895139985330000https://www.nicepng.com/png/detail/593-5933043_promotion-banner-png-promotional-banners.png'/>,
-    <Banner Banner='https://www.procuroacho.com/espaco-vip/768/img/1-lo-store-tendenci-loja-de-roupas-femininas-banner.jpg'/>
+    <Banner ImagBanner={
+        require('../../Assets/banner3.png')}/>,
+    <Banner ImagBanner={
+        require('../../Assets/banner1.jpg')}/>,
+    <Banner ImagBanner={
+        require('../../Assets/banner2.jpg')}/>,
+    <Banner ImagBanner={
+        require('../../Assets/banner4.png')}/>,
 ];
- const CardsCategory = [
-     <Category TitleCategory='Category' 
-     TitleIcon='Masculino'  TitleIcon1='Feminino' TitleIcon2='Sports' TitleIcon3='Unisex' 
-     Icon='event-seat'  Icon1='card-giftcard'  Icon2='sports'  Icon3='wc'
-/>,
- <Category TitleCategory=' ' 
- TitleIcon='Masculino'  TitleIcon1='Masculino' TitleIcon2='Masculino' TitleIcon3='Outros' 
- Icon='event-seat'  Icon1='card-giftcard'  Icon2='wc'  Icon3='info'
-/>,
+const CardsCategory = [
+    <Category TitleCategory='Category' TitleIcon='Masculino' TitleIcon1='Feminino' TitleIcon2='Sports' TitleIcon3='Unisex' Icon='event-seat' Icon1='card-giftcard' Icon2='sports' Icon3='wc'/>,
 
+    <Category TitleCategory=' ' TitleIcon='Acessorios' TitleIcon1='Kids' TitleIcon2='Beleza' TitleIcon3='Outros' Icon='ad-units' Icon1='baby-changing-station' Icon2='content-cut' Icon3='info'/>,
 ];
-
-export default function Home (){
-    return(
+export default function Home() {
+    return (
         <S.Container>
             <Header/>
             <ScrollView>
-            <Carrousel Card={ImgBanners}/>
-            <Carrousel Card={ CardsCategory }/>
-            <ScrollCards/>
+
+                <S.SubContainer>
+                    <Carrousel Card={ImgBanners}/>
+                </S.SubContainer>
+
+                <Carrousel Card={CardsCategory}/>
+
+                <S.ContainerCard> 
+                    {products.map((products) => (
+                        <Cards key={products._id}
+                        Id={products._id}
+                        Icon1='favorite-border' 
+                        Valor1={products.price} 
+                        Title1={products.name} 
+                        Image1={{uri:products.image}}
+                        />
+                    ))} 
+                    </S.ContainerCard>
+
             </ScrollView>
         </S.Container>
     )

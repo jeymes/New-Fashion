@@ -5,10 +5,5 @@ width: 100%;
 height: 100%;
 justify-content: center;
 align-items: center;
-padding: 5px 15px 5px;
-`;
-export const Banner = styled.Image`
-width: 100%;
-height: 150px;
-border-radius: 10px;
+background-color: white;
 `;

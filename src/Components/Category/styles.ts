@@ -22,7 +22,7 @@ justify-content: space-around;
 align-items: center;
 /* border: 1px solid red; */
 `;
-export const CardsCategory = styled.View`
+export const CardsCategory = styled.Pressable`
 width: 70px;
 height: 70px;
 background-color: #DC143C;

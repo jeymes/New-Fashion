@@ -12,7 +12,7 @@ width: 80%;
 height: 50%;
 justify-content: center;
 align-items: center;
-background-color: #80808080;
+background-color: #0004;
 border-radius: 10px;
 `;
 export const TitleContainer = styled.View`
@@ -20,7 +20,7 @@ width: 50%;
 display: flex;
 justify-content: center;
 align-items: center;
-margin-bottom: 10px;
+margin-bottom: 50px;
 /* border: 1px solid red; */
 `;
 export const TextTitle = styled.Text`
@@ -32,18 +32,41 @@ color: white;
 `;
 
 export const TextInput = styled.TextInput`
-width: 80%;
-height:40px;
-text-align: center;
-font-weight: 700;
-color: black;
-margin-top: 20px;
-margin-bottom: 20px;
+width: 90%;
+height: 50px;
+border-radius: 12px;
+font-size: 14px;
+padding: 7px 0;
+padding-left: 20px;
+margin-bottom: 12px;
 border: 1px solid white;
+color:white;
 `;
-export const ButtonContainer = styled.Button`
-width: 80%;
-height:40px;
+export const ButtonContainer = styled.View`
+width: 100%;
+padding-top: 20px;
+padding-bottom: 20px;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: center;
+`;
+export const Button = styled.Pressable`
+background-color: #DC143C;
+border-radius: 10px;
+width: 130px;
+height: 35px;
+justify-content: center;
+align-items: center;
+`;
+export const ButtonTitle = styled.Text`
+color: white;
+font-size: 13px;
+font-weight: 700;
 text-align: center;
-color: black;
+`;
+export const TextSenha = styled.Text`
+color: white;
+font-size: 12px;
+font-weight: 700;
+text-align: center;
 `;

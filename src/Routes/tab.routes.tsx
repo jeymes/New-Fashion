@@ -1,12 +1,16 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { MaterialIcons } from '@expo/vector-icons';
 
+import { 
+    HomeNavigation, 
+    LoginNavigation,
+    CategoriesNavigation, 
+    FavoriteNavigation,
+
+} from './stack.routes';
+
 const {Screen, Navigator} = createBottomTabNavigator();
 
-import Home  from '../Pages/Home';
-import { Login } from '../Pages/Login';
-import { Search } from '../Pages/Search';
-import { Shopping } from '../Pages/Shopping';
 
 export function TabRoutes() {
     return (
@@ -17,7 +21,7 @@ export function TabRoutes() {
             }}
             >
             <Screen name="home"
-                component={Home}
+                component={HomeNavigation}
                 options={{
                     tabBarLabel: 'Home',
                     tabBarIcon: ({color, size}) =>(
@@ -28,10 +32,10 @@ export function TabRoutes() {
                     )
                 }}  />
 
-            <Screen name="screenB"
-                component={Search}
+            <Screen name="Favoritos"
+                component={FavoriteNavigation}
                 options={{
-                    tabBarLabel: 'Favorito',
+                    tabBarLabel: 'Favoritos',
                     tabBarIcon: ({color, size}) => (
                         <MaterialIcons
                         name='favorite'
@@ -39,19 +43,19 @@ export function TabRoutes() {
                         size={size}  />
                     )
                 }}  />
-                <Screen name="shopping"
-                component={Shopping}
+                <Screen name="categories"
+                component={CategoriesNavigation}
                 options={{
-                    tabBarLabel: 'Shopping',
+                    tabBarLabel: 'categorias',
                     tabBarIcon: ({color, size}) => (
                         <MaterialIcons
-                        name='shopping-bag'
+                        name='grid-view'
                         color={color}
                         size={size}  />
                     )
                 }}  />
                 <Screen name="person"
-                component={Login}
+                component={LoginNavigation}
                 options={{
                     tabBarLabel: 'Login',
                     tabBarIcon: ({color, size}) => (

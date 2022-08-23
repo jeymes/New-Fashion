@@ -1,6 +1,7 @@
 import * as S from './styles';
 import {MaterialIcons} from '@expo/vector-icons';
 
+
 type props = {
     Icon: any
     Icon1: any
@@ -16,7 +17,7 @@ type props = {
 }
 
 export default function Category({ 
-    TitleCategory,
+   TitleCategory,
     Icon, Icon1, Icon2, Icon3,
     TitleIcon, TitleIcon1, TitleIcon2, TitleIcon3,
 }: props) {
@@ -30,10 +31,12 @@ export default function Category({
 
         <S.SubContainer>
 
-            <S.CardsCategory>
-                <MaterialIcons name={Icon}
+            <S.CardsCategory  >
+                <MaterialIcons
+                name={Icon}
                     color={'white'}
-                    size={30}/>
+                    size={30}
+                   />
                 <S.SubTitle>
 
                     {TitleIcon}

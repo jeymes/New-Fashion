@@ -2,19 +2,12 @@ import styled from "styled-components/native";
 
 export const Container = styled.View`
 width: 100%;
-flex: 1;
-justify-content: flex-start;
-flex-direction: column;
+justify-content: center;
+padding-top: 50px;
 align-items: center;
 background-color: white;
-`;
-export const SubContainer = styled.View`
-width: 100%;
-height: 200px;
-justify-content: flex-start;
-flex-direction: column;
-align-items: center;
-background-color: white;
+flex-direction: row;
+flex-wrap: wrap;
 `;
 export const ContainerCard = styled.View`
 flex-wrap: wrap;
