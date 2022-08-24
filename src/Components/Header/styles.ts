@@ -17,7 +17,7 @@ justify-content: center;
 align-items: center;
 margin-top: 30px;
 `;
-export const IconContainer = styled.View`
+export const IconContainer = styled.Pressable`
 width: 30%;
 display: flex;
 flex-direction: row;

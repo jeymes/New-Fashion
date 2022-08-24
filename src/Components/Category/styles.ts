@@ -5,6 +5,7 @@ width: 100%;
 height: 110px;
 justify-content: space-around;
 align-items: center;
+padding: 10px 10px;
 /* border: 1px solid red; */
 `;
 export const Title = styled.Text`
@@ -23,8 +24,8 @@ align-items: center;
 /* border: 1px solid red; */
 `;
 export const CardsCategory = styled.Pressable`
-width: 70px;
-height: 70px;
+width: 80px;
+height: 60px;
 background-color: #DC143C;
 flex-direction: column;
 justify-content: center;

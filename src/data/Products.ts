@@ -1,6 +1,6 @@
 const products = [
     {
-        _id: "1",
+                _id: "1",
         name: "Ténis Colorido Adidas",
         image: "https://elements-cover-images-0.imgix.net/cae499fb-cf5c-40cc-98ec-8ecf59b235e8?auto=compress%2Cformat&fit=max&w=1019&s=94029a87e1074fb4adbc7c837d163f4d",
         description: "Description",
@@ -8,7 +8,7 @@ const products = [
         countInstock: 3,
         rating: 4,
         numReviews:4,
-    
+            
     },
     {
         _id: "2",

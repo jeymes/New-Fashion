@@ -1,4 +1,5 @@
 import {MaterialIcons} from '@expo/vector-icons';
+import {useNavigation} from '@react-navigation/native';
 
 import * as S from './styles';
 
@@ -19,11 +20,17 @@ export default function Cards({
            Id
 }:props) {
 
+    const navigation = useNavigation();
+
+    function OpenPagProductor(){
+        navigation.navigate('pagProductor')
+    }
+
     return (
         <S.Container key={Id}>
             <S.SubContainer>
                 
-                    <S.Cards>
+                    <S.Cards onPress={OpenPagProductor} >
                     <S.ImageContainer>
                         <S.Images source={Image1}/>
                     </S.ImageContainer>

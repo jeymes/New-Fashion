@@ -1,27 +1,25 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { MaterialIcons } from '@expo/vector-icons';
-
-import { 
-    HomeNavigation, 
-    LoginNavigation,
-    CategoriesNavigation, 
-    FavoriteNavigation,
-
-} from './stack.routes';
+import { MaterialIcons, Entypo  } from '@expo/vector-icons';
+import { Favorite } from '../Pages/Favorite';
+import { Categories } from '../Pages/Categories';
+import { Config } from '../Pages/Config';
+import  Home  from '../Pages/Home';
 
 const {Screen, Navigator} = createBottomTabNavigator();
 
 
 export function TabRoutes() {
     return (
+        
         <Navigator screenOptions={{
             tabBarActiveTintColor: '#DC143C',
             tabBarInactiveTintColor: 'gray',
-            headerShown: false
-            }}
-            >
+            headerShown: false }} >
+
+                
+
             <Screen name="home"
-                component={HomeNavigation}
+                component={Home}
                 options={{
                     tabBarLabel: 'Home',
                     tabBarIcon: ({color, size}) =>(
@@ -30,10 +28,12 @@ export function TabRoutes() {
                         color={color}
                         size={size} />
                     )
-                }}  />
+                    }}></Screen>
 
-            <Screen name="Favoritos"
-                component={FavoriteNavigation}
+            <Screen 
+            
+            name="favoritos"
+                component={Favorite}
                 options={{
                     tabBarLabel: 'Favoritos',
                     tabBarIcon: ({color, size}) => (
@@ -42,29 +42,30 @@ export function TabRoutes() {
                         color={color}
                         size={size}  />
                     )
-                }}  />
+                }}  ></Screen>
+
                 <Screen name="categories"
-                component={CategoriesNavigation}
+                component={Categories}
                 options={{
-                    tabBarLabel: 'categorias',
+                    tabBarLabel: 'Categorias',
                     tabBarIcon: ({color, size}) => (
                         <MaterialIcons
                         name='grid-view'
                         color={color}
                         size={size}  />
                     )
-                }}  />
-                <Screen name="person"
-                component={LoginNavigation}
+                }}  ></Screen>
+                <Screen name="config"
+                component={Config}
                 options={{
-                    tabBarLabel: 'Login',
+                    tabBarLabel: 'Configurações',
                     tabBarIcon: ({color, size}) => (
-                        <MaterialIcons
-                        name='person'
+                        <Entypo
+                        name='cog'
                         color={color}
                         size={size}  />
                     )
-                }}  />
+                }}  ></Screen>
         </Navigator>
     )
 }

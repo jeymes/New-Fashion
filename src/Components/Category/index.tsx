@@ -1,6 +1,6 @@
 import * as S from './styles';
 import {MaterialIcons} from '@expo/vector-icons';
-
+import { useNavigation } from '@react-navigation/native'
 
 type props = {
     Icon: any
@@ -14,15 +14,34 @@ type props = {
     TitleIcon3: any
 
     TitleCategory: string
+
+    OpenCategory: any
+    OpenCategory1: any
+    OpenCategory2: any
+    OpenCategory3: any
 }
 
 export default function Category({ 
    TitleCategory,
     Icon, Icon1, Icon2, Icon3,
-    TitleIcon, TitleIcon1, TitleIcon2, TitleIcon3,
+    TitleIcon, TitleIcon1, TitleIcon2, TitleIcon3, 
+    OpenCategory, OpenCategory1, OpenCategory2, OpenCategory3,
 }: props) {
 
+const navigation = useNavigation();
 
+function Category(){
+    navigation.navigate(OpenCategory)
+}
+function Category1(){
+    navigation.navigate(OpenCategory1)
+}
+function Category2(){
+    navigation.navigate(OpenCategory2)
+}
+function Category3(){
+    navigation.navigate(OpenCategory3)
+}
     return (<S.Container>
 
         <S.Title>
@@ -31,7 +50,7 @@ export default function Category({
 
         <S.SubContainer>
 
-            <S.CardsCategory  >
+            <S.CardsCategory onPress={Category} >
                 <MaterialIcons
                 name={Icon}
                     color={'white'}
@@ -43,7 +62,7 @@ export default function Category({
                 </S.SubTitle>
             </S.CardsCategory>
 
-            <S.CardsCategory>
+            <S.CardsCategory onPress={Category1} >
                 <MaterialIcons name={Icon1}
                     color={'white'}
                     size={30}/>
@@ -53,7 +72,7 @@ export default function Category({
                     {TitleIcon1}
                 </S.SubTitle>
             </S.CardsCategory>
-            <S.CardsCategory>
+            <S.CardsCategory onPress={Category2} >
                 <MaterialIcons name={Icon2}
                     color={'white'}
                     size={30}/>
@@ -63,7 +82,7 @@ export default function Category({
                     {TitleIcon2}
                 </S.SubTitle>
             </S.CardsCategory>
-            <S.CardsCategory>
+            <S.CardsCategory onPress={Category3} >
                 <MaterialIcons name={Icon3}
                     color={'white'}
                     size={30}/>
