@@ -25,6 +25,9 @@ export default function Cards({
     function OpenPagProductor(){
         navigation.navigate('pagProductor')
     }
+    function OpenFavorite(){
+        navigation.navigate('favorite')
+    }
 
     return (
         <S.Container key={Id}>
@@ -38,7 +41,7 @@ export default function Cards({
                         <S.Title> {Title1} </S.Title>
                         <S.Description>
                             <S.Valor> R$: {Valor1} </S.Valor>
-                            <S.ContainerIcon>
+                            <S.ContainerIcon onPress={OpenFavorite} >
                             <MaterialIcons
                             name={Icon1}
                             size={30}

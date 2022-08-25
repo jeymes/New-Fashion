@@ -17,11 +17,23 @@ justify-content: center;
 align-items: center;
 margin-top: 30px;
 `;
-export const IconContainer = styled.Pressable`
+export const ContainerIcon = styled.View`
 width: 30%;
-display: flex;
 flex-direction: row;
 justify-content: space-around;
+align-items: center;
+`;
+export const IconContainerCart = styled.Pressable`
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+margin-top: 30px;
+`;
+export const IconContainerNotif = styled.Pressable`
+display: flex;
+flex-direction: row;
+justify-content: center;
 align-items: center;
 margin-top: 30px;
 `;

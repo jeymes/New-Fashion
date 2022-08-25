@@ -1,13 +1,19 @@
 export declare global {
     namespace ReactNavigation {
         interface RootParamList {
+
+            // Tabs
             config: undefined
             tab: undefined
             favorite: undefined
             categories: undefined
-            cart: undefined
             home: undefined
             login: undefined
+
+            // Notifications & Carrinho
+            
+            cart: undefined
+            notifications: undefined
 
             // Pagina de Produtos >
 
@@ -22,6 +28,10 @@ export declare global {
             sports: undefined
             acessorios: undefined
             beleza: undefined
+            calcados: undefined
+            saude: undefined
+            mochilas: undefined
+            joias: undefined
 
         }
     }

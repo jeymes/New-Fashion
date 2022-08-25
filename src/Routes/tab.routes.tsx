@@ -1,5 +1,5 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { MaterialIcons, Entypo  } from '@expo/vector-icons';
+import { MaterialIcons, Ionicons   } from '@expo/vector-icons';
 import { Favorite } from '../Pages/Favorite';
 import { Categories } from '../Pages/Categories';
 import { Config } from '../Pages/Config';
@@ -32,7 +32,7 @@ export function TabRoutes() {
 
             <Screen 
             
-            name="favoritos"
+            name="favorite"
                 component={Favorite}
                 options={{
                     tabBarLabel: 'Favoritos',
@@ -58,10 +58,10 @@ export function TabRoutes() {
                 <Screen name="config"
                 component={Config}
                 options={{
-                    tabBarLabel: 'Configurações',
+                    tabBarLabel: 'Perfil',
                     tabBarIcon: ({color, size}) => (
-                        <Entypo
-                        name='cog'
+                        <Ionicons 
+                        name='person-circle'
                         color={color}
                         size={size}  />
                     )

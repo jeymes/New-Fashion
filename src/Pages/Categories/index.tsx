@@ -41,18 +41,33 @@ export function Categories() {
     return (
         <S.Container>
                 <MiniCards 
+                OpenCategory2='unisex'
+                OpenCategory1='masculino'
+                OpenCategory='feminino'
                 CategoryImage1={Feminina} CategoryTitle1='Feminina'
                 CategoryImage2={Masculina} CategoryTitle2='Masculino'
                 CategoryImage3={Unisex} CategoryTitle3='Unisex'/>
-                <MiniCards 
+                <MiniCards
+
+                OpenCategory2='acessorios'
+                OpenCategory1='kids'
+                OpenCategory='sports' 
                 CategoryImage1={Sports} CategoryTitle1='Sports'
                 CategoryImage2={Kids} CategoryTitle2='Kids'
                 CategoryImage3={Acessórios} CategoryTitle3='Acessórios'/>
-                <MiniCards 
+                <MiniCards
+
+                OpenCategory2='calcados'
+                OpenCategory1='beleza'
+                OpenCategory='pets' 
                 CategoryImage1={Pets} CategoryTitle1='Pets'
                 CategoryImage2={Beleza} CategoryTitle2='Beleza'
                 CategoryImage3={Calçados} CategoryTitle3='Calçados'/>
-                <MiniCards 
+
+                <MiniCards
+                OpenCategory2='joias'
+                OpenCategory1='mochilas'
+                OpenCategory='saude' 
                 CategoryImage1={Saude} CategoryTitle1='Saude'
                 CategoryImage2={Mochilas} CategoryTitle2='Mochilas'
                 CategoryImage3={Joias} CategoryTitle3='Joias'/>

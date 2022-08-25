@@ -1,5 +1,5 @@
 import * as S from './styles';
-import {MaterialIcons} from '@expo/vector-icons';
+import {MaterialIcons, FontAwesome5, FontAwesome } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native'
 
 type props = {
@@ -51,7 +51,7 @@ function Category3(){
         <S.SubContainer>
 
             <S.CardsCategory onPress={Category} >
-                <MaterialIcons
+                <FontAwesome5
                 name={Icon}
                     color={'white'}
                     size={30}
@@ -63,7 +63,7 @@ function Category3(){
             </S.CardsCategory>
 
             <S.CardsCategory onPress={Category1} >
-                <MaterialIcons name={Icon1}
+                <FontAwesome  name={Icon1}
                     color={'white'}
                     size={30}/>
 

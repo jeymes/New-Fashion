@@ -1,16 +1,18 @@
 import * as S from './styles'
 import {MaterialIcons} from '@expo/vector-icons';
-import { useNavigation } from '@react-navigation/native';
+import {useNavigation} from '@react-navigation/native';
 
 
 export default function Header() {
 
     const navigation = useNavigation();
 
-    function OpenScreen(){
+    function OpenCart() {
         navigation.navigate('cart')
     }
-
+    function OpenNotificatios() {
+        navigation.navigate('notifications')
+    }
 
     return (<S.Container>
 
@@ -24,16 +26,19 @@ export default function Header() {
         </S.SubContainer>
 
 
-        <S.IconContainer onPress={OpenScreen} >
-            <MaterialIcons
-                name='shopping-cart'
-                color={'black'}
-                size={30}/>
-                <MaterialIcons name='notifications'
-                color={'black'}
-                size={30}/>
-                
-        </S.IconContainer>
+        <S.ContainerIcon>
+            <S.IconContainerCart onPress={OpenCart}>
+                <MaterialIcons name='shopping-cart'
+                    color={'black'}
+                    size={30}/>
+            </S.IconContainerCart>
+            <S.IconContainerNotif onPress={OpenNotificatios}>
 
+                <MaterialIcons name='notifications'
+                    color={'black'}
+                    size={30}/>
+            </S.IconContainerNotif>
+
+        </S.ContainerIcon>
     </S.Container>)
 }

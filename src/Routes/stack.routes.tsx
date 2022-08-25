@@ -9,7 +9,13 @@ import {Beleza} from "../Pages/ScreenCategories/Beleza";
 import {Acessorios} from "../Pages/ScreenCategories/Acessorios";
 import {Unisex} from "../Pages/ScreenCategories/Unisex";
 import {Sports} from "../Pages/ScreenCategories/Sports";
-import { PagProductor } from "../Pages/PagProductor";
+import {PagProductor} from "../Pages/PagProductor";
+import {Notifications} from "../Pages/Notificatios";
+import { Saude } from "../Pages/ScreenCategories/Saude";
+import { Mochilas } from "../Pages/ScreenCategories/Mochilas";
+import { Pets } from "../Pages/ScreenCategories/Pets";
+import { Joias } from "../Pages/ScreenCategories/Joias";
+import { Calcados } from "../Pages/ScreenCategories/Calcados";
 
 const Stack = createNativeStackNavigator();
 
@@ -24,15 +30,19 @@ export function StackRoutes() {
         <Stack.Screen name="tab"
             component={TabRoutes}></Stack.Screen>
 
+        {/* Notifications & Carrinho */}
         <Stack.Screen name="cart"
             component={Cart}></Stack.Screen>
 
-            {/* PagProductor > */}
+        <Stack.Screen name="notifications"
+            component={Notifications}></Stack.Screen>
 
-            <Stack.Screen name="pagProductor"
+        {/* PagProductor > */}
+
+        <Stack.Screen name="pagProductor"
             component={PagProductor}></Stack.Screen>
 
-            {/* Categorias > */}
+        {/* Categorias > */}
         <Stack.Screen name="masculino"
             component={Masculino}></Stack.Screen>
 
@@ -50,11 +60,24 @@ export function StackRoutes() {
 
         <Stack.Screen name="unisex"
             component={Unisex}></Stack.Screen>
-            
+
         <Stack.Screen name="sports"
             component={Sports}></Stack.Screen>
 
-           
+        <Stack.Screen name="saude"
+            component={Saude}></Stack.Screen>
+
+        <Stack.Screen name="pets"
+            component={Pets}></Stack.Screen>
+
+        <Stack.Screen name="mochilas"
+            component={Mochilas}></Stack.Screen>
+
+        <Stack.Screen name="joias"
+            component={Joias}></Stack.Screen>
+            
+             <Stack.Screen name="calcados"
+            component={Calcados}></Stack.Screen>
 
 
     </Stack.Navigator>)

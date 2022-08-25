@@ -22,8 +22,13 @@ const ImgBanners = [
         require('../../Assets/banner4.png')}/>,
 ];
 const CardsCategory = [
-    <Category OpenCategory3='unisex' OpenCategory2='sports'  OpenCategory1='feminino' OpenCategory="masculino" TitleCategory='Category' TitleIcon='Masculino' TitleIcon1='Feminino' TitleIcon2='Sports' TitleIcon3='Unisex' Icon='event-seat' Icon1='card-giftcard' Icon2='sports' Icon3='wc'/>,
-    <Category OpenCategory3="categories" OpenCategory2='beleza' OpenCategory1='kids' OpenCategory='acessorios' TitleCategory=' ' TitleIcon='Acessorios' TitleIcon1='Kids' TitleIcon2='Beleza' TitleIcon3='Outros' Icon='ad-units' Icon1='baby-changing-station' Icon2='content-cut' Icon3='info'/>,
+    <Category OpenCategory3='unisex' OpenCategory2='sports'  OpenCategory1='feminino' OpenCategory="masculino" 
+    TitleCategory='Category' TitleIcon='Masculino' TitleIcon1='Feminino' TitleIcon2='Sports' TitleIcon3='Unisex' 
+    Icon='tshirt' Icon1='female' Icon2='sports' Icon3='wc'/>,
+
+    <Category OpenCategory3="categories" OpenCategory2='beleza' OpenCategory1='kids' OpenCategory='acessorios' 
+    TitleCategory=' ' TitleIcon='Acessorios' TitleIcon1='Kids' TitleIcon2='Beleza' TitleIcon3='Outros' 
+    Icon='glasses' Icon1='child' Icon2='content-cut' Icon3='info'/>,
 ];
 export default function Home() {
 
