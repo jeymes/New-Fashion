@@ -1,5 +1,6 @@
 import {MaterialIcons} from '@expo/vector-icons';
 import {useNavigation} from '@react-navigation/native';
+import products from '../../data/Products';
 
 import * as S from './styles';
 
@@ -9,7 +10,10 @@ import * as S from './styles';
          Valor1: any
            Icon1: any
            Id: any
+         
  }
+
+ 
 
 
 export default function Cards({
@@ -17,13 +21,15 @@ export default function Cards({
       Title1,
          Valor1,
            Icon1,
-           Id
+           Id,
+           
+      
 }:props) {
 
-    const navigation = useNavigation();
 
+    const navigation = useNavigation();
     function OpenPagProductor(){
-        navigation.navigate('pagProductor')
+        navigation.navigate('pagProductor', {item: require('../../Assets/tenis01.png')})
     }
     function OpenFavorite(){
         navigation.navigate('favorite')
@@ -33,14 +39,14 @@ export default function Cards({
         <S.Container key={Id}>
             <S.SubContainer>
                 
-                    <S.Cards onPress={OpenPagProductor} >
+                    <S.Cards  onPress={OpenPagProductor}>
                     <S.ImageContainer>
                         <S.Images source={Image1}/>
                     </S.ImageContainer>
                     <S.DescriptionContainer>
                         <S.Title> {Title1} </S.Title>
                         <S.Description>
-                            <S.Valor> R$: {Valor1} </S.Valor>
+                            <S.Valor> R$ {Valor1} </S.Valor>
                             <S.ContainerIcon onPress={OpenFavorite} >
                             <MaterialIcons
                             name={Icon1}

@@ -6,9 +6,7 @@ import Category from '../../Components/Category'
 import * as S from './styles'
 import products from '../../data/Products';
 import Cards from '../../Components/Cards';
-import { Button } from '../../Components/Button';
-
-
+import {useNavigation} from '@react-navigation/native';
 
 
 const ImgBanners = [
@@ -31,6 +29,7 @@ const CardsCategory = [
     Icon='glasses' Icon1='child' Icon2='content-cut' Icon3='info'/>,
 ];
 export default function Home() {
+    const navigation = useNavigation();
 
     return (
         <S.Container>
@@ -44,9 +43,10 @@ export default function Home() {
 
                 <Carrousel Card={CardsCategory}/>
 
-                <S.ContainerCard> 
+                <S.ContainerCard > 
                     {products.map((products) => (
-                        <Cards key={products._id}
+                        <Cards
+                        key={products._id}
                         Id={products._id}
                         Icon1='favorite-border' 
                         Valor1={products.price} 

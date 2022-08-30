@@ -16,7 +16,7 @@ flex-direction: column;
 align-items: center;
 background-color: white;
 `;
-export const ContainerCard = styled.View`
+export const ContainerCard = styled.Pressable`
 flex-wrap: wrap;
 flex-direction: row;
 justify-content: center;

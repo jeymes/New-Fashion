@@ -26,8 +26,8 @@ export function Login() {
 
                 <S.TextInput  placeholderTextColor='#fff9' placeholder="Senha"/>
                 <S.ButtonContainer>
-                <S.Button>
-                    <S.ButtonTitle onPress={OpenScreen} >
+                <S.Button onPress={OpenScreen}>
+                    <S.ButtonTitle  >
                         Entrar
                     </S.ButtonTitle>
                 </S.Button>

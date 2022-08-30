@@ -22,61 +22,62 @@ const Stack = createNativeStackNavigator();
 export function StackRoutes() {
     const Stack = createNativeStackNavigator();
     return (<Stack.Navigator screenOptions={
-        {headerShown: false}
+        {headerShown: true}
     }>
-        <Stack.Screen name="login"
-            component={Login}></Stack.Screen>
+        {/* <Stack.Screen options={{headerShown:false}}  name="login"
+            component={Login} ></Stack.Screen> */}
 
-        <Stack.Screen name="tab"
+        <Stack.Screen options={{headerShown:false}}   name="tab"
             component={TabRoutes}></Stack.Screen>
 
         {/* Notifications & Carrinho */}
-        <Stack.Screen name="cart"
+        <Stack.Screen name="cart" options={{ headerTitle: 'Carrinho'}}
             component={Cart}></Stack.Screen>
 
-        <Stack.Screen name="notifications"
+        <Stack.Screen name="notifications" options={{ headerTitle: 'Notificações'}}
             component={Notifications}></Stack.Screen>
 
         {/* PagProductor > */}
 
         <Stack.Screen name="pagProductor"
-            component={PagProductor}></Stack.Screen>
+            component={PagProductor} options={{
+               headerTitle: 'Ténis Colorido Adidas' }}></Stack.Screen>
 
         {/* Categorias > */}
-        <Stack.Screen name="masculino"
+        <Stack.Screen name="masculino" options={{ headerTitle: 'Masculino'}}
             component={Masculino}></Stack.Screen>
 
-        <Stack.Screen name="feminino"
+        <Stack.Screen name="feminino" options={{ headerTitle: 'Feminino'}}
             component={Feminino}></Stack.Screen>
 
-        <Stack.Screen name="kids"
+        <Stack.Screen name="kids" options={{ headerTitle: 'Kids'}}
             component={Kids}></Stack.Screen>
 
-        <Stack.Screen name="beleza"
+        <Stack.Screen name="beleza" options={{ headerTitle: 'Beleza'}}
             component={Beleza}></Stack.Screen>
 
-        <Stack.Screen name="acessorios"
+        <Stack.Screen name="acessorios" options={{ headerTitle: 'Acessorios'}}
             component={Acessorios}></Stack.Screen>
 
-        <Stack.Screen name="unisex"
+        <Stack.Screen name="unisex" options={{ headerTitle: 'Unisex'}}
             component={Unisex}></Stack.Screen>
 
-        <Stack.Screen name="sports"
+        <Stack.Screen name="sports" options={{ headerTitle: 'Sports'}}
             component={Sports}></Stack.Screen>
 
-        <Stack.Screen name="saude"
+        <Stack.Screen name="saude" options={{ headerTitle: 'Saude'}}
             component={Saude}></Stack.Screen>
 
-        <Stack.Screen name="pets"
+        <Stack.Screen name="pets" options={{ headerTitle: 'Pets'}}
             component={Pets}></Stack.Screen>
 
-        <Stack.Screen name="mochilas"
+        <Stack.Screen name="mochilas" options={{ headerTitle: 'Mochilas'}}
             component={Mochilas}></Stack.Screen>
 
-        <Stack.Screen name="joias"
+        <Stack.Screen name="joias" options={{ headerTitle: 'Joias'}}
             component={Joias}></Stack.Screen>
             
-             <Stack.Screen name="calcados"
+             <Stack.Screen name="calcados" options={{ headerTitle: 'Calcados'}}
             component={Calcados}></Stack.Screen>
 
 
