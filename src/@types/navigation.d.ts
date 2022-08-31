@@ -17,9 +17,7 @@ export declare global {
 
             // Pagina de Produtos >
 
-            pagProductor: {
-                item: any
-            }
+            pagProductor: undefined
 
             // Categorias >
 

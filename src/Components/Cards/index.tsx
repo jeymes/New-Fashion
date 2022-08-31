@@ -1,52 +1,52 @@
 import {MaterialIcons} from '@expo/vector-icons';
 import {useNavigation} from '@react-navigation/native';
 import products from '../../data/Products';
+import {ScrollView} from 'react-native';
 
 import * as S from './styles';
 
- type props = {
-     Image1: any
-      Title1: any
-         Valor1: any
+  type props = {
+    ApiProduct: any
+      Image1: any
+       Title1: any
+          Valor1: any
            Icon1: any
-           Id: any
+            Id: any
          
- }
+  }
 
  
 
 
 export default function Cards({
+    ApiProduct,
     Image1,
-      Title1,
-         Valor1,
-           Icon1,
-           Id,
-           
-      
-}:props) {
+     Title1,
+        Valor1,
+         Icon1,
+          Id,
+        }:props) {
 
 
     const navigation = useNavigation();
-    function OpenPagProductor(){
-        navigation.navigate('pagProductor', {item: require('../../Assets/tenis01.png')})
-    }
+    
     function OpenFavorite(){
         navigation.navigate('favorite')
     }
 
     return (
         <S.Container key={Id}>
+              
             <S.SubContainer>
-                
-                    <S.Cards  onPress={OpenPagProductor}>
+              
+                    <S.Cards  onPress={() => navigation.navigate('pagProductor', ApiProduct)}>
                     <S.ImageContainer>
                         <S.Images source={Image1}/>
                     </S.ImageContainer>
                     <S.DescriptionContainer>
                         <S.Title> {Title1} </S.Title>
                         <S.Description>
-                            <S.Valor> R$ {Valor1} </S.Valor>
+                            <S.Valor> $ {Valor1} </S.Valor>
                             <S.ContainerIcon onPress={OpenFavorite} >
                             <MaterialIcons
                             name={Icon1}
@@ -61,6 +61,7 @@ export default function Cards({
                 </S.Cards>
                 
               
+            
                 
             </S.SubContainer>
         </S.Container>

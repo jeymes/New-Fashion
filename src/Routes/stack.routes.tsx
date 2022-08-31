@@ -24,11 +24,13 @@ export function StackRoutes() {
     return (<Stack.Navigator screenOptions={
         {headerShown: true}
     }>
-        {/* <Stack.Screen options={{headerShown:false}}  name="login"
-            component={Login} ></Stack.Screen> */}
+        
 
         <Stack.Screen options={{headerShown:false}}   name="tab"
             component={TabRoutes}></Stack.Screen>
+            
+            <Stack.Screen options={{headerShown:false}}  name="login"
+            component={Login} ></Stack.Screen>
 
         {/* Notifications & Carrinho */}
         <Stack.Screen name="cart" options={{ headerTitle: 'Carrinho'}}

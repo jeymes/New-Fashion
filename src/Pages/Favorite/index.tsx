@@ -13,6 +13,7 @@ export function Favorite(){
             <S.ContainerCard> 
                     {products.map((products) => (
                         <Cards key={products._id}
+                        ApiProduct={products}
                         Id={products._id} 
                         Icon1='favorite' 
                         Valor1={products.price} 

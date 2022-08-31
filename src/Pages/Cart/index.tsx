@@ -7,10 +7,7 @@ import { Button } from '../../Components/Button';
 export default function Cart() {
 
     const navigation = useNavigation();
-
-    function OpenScreen() {
-        navigation.navigate('home')
-    }
+    
 
     return (
         <S.Container>
@@ -30,7 +27,7 @@ export default function Cart() {
                     </S.ContainerTotal>
                 </S.SubContainer>
 
-                <Button ButtonTitle='Checkout' ButtonScreenPag={OpenScreen}/>
+                <Button ButtonTitle='Checkout' ButtonScreenPag='login'/>
         </S.Container>
     )
 }

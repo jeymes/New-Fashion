@@ -10,6 +10,7 @@ height: 300px;
 justify-content: center;
 flex-direction: row;
 align-items: center;
+flex-wrap: wrap;
 `;
 export const Cards = styled.Pressable`
 width: 180px;

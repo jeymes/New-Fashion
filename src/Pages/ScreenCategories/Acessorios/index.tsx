@@ -12,6 +12,7 @@ export function Acessorios(){
             <S.ContainerCard> 
                     {products.map((products) => (
                         <Cards key={products._id}
+                        ApiProduct={products}
                         Id={products._id} 
                         Icon1='favorite-border'
                         Valor1={products.price} 

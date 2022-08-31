@@ -59,6 +59,11 @@ font-size: 20px;
 color: black;
 font-weight: 700;
 `;
+export const TitleSemEstoque = styled.Text`
+font-size: 20px;
+color: red;
+font-weight: 700;
+`;
 export const ViewDescrption = styled.View`
 width: 90%;
 justify-content: center;
@@ -76,4 +81,18 @@ width: 100%;
 font-size: 15px;
 color: black;
 padding: 5px;
+`;
+export const TitleButton = styled.Text`
+font-size: 20px;
+color: white;
+font-weight: 600;
+/* border: 1px solid red; */
+`;
+export const SubTitle = styled.Pressable`
+align-items: center;
+justify-content: center;
+background-color: #111;
+border-radius: 10px;
+width: 300px;
+height: 50px;
 `;

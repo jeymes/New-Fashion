@@ -13,6 +13,7 @@ export function Unisex(){
                     {products.map((products) => (
                         <Cards key={products._id}
                         Id={products._id} 
+                        ApiProduct={products}
                         Icon1='favorite-border'
                         Valor1={products.price} 
                         Title1={products.name} 

@@ -16,6 +16,7 @@ export function Joias(){
                         Icon1='favorite-border'
                         Valor1={products.price} 
                         Title1={products.name} 
+                        ApiProduct={products}
                         Image1={{uri:products.image}}
                         />
                     ))} 

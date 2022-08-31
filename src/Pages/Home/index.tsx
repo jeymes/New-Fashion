@@ -45,7 +45,7 @@ export default function Home() {
 
                 <S.ContainerCard > 
                     {products.map((products) => (
-                        <Cards
+                        <Cards ApiProduct={products}
                         key={products._id}
                         Id={products._id}
                         Icon1='favorite-border' 
