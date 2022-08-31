@@ -28,7 +28,7 @@ export function StackRoutes() {
 
         <Stack.Screen options={{headerShown:false}}   name="tab"
             component={TabRoutes}></Stack.Screen>
-            
+
             <Stack.Screen options={{headerShown:false}}  name="login"
             component={Login} ></Stack.Screen>
 

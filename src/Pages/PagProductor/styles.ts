@@ -89,6 +89,7 @@ font-weight: 600;
 /* border: 1px solid red; */
 `;
 export const SubTitle = styled.Pressable`
+margin-top: 50px;
 align-items: center;
 justify-content: center;
 background-color: #111;
