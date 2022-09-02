@@ -37,7 +37,6 @@ height: 25%;
 border-radius: 10px;
 justify-content: space-around;
 align-items: center;
-/* border: 1px solid red; */
 `;
 export const Description = styled.View`
 width: 100%;
@@ -48,14 +47,14 @@ align-items: center;
 `;
 export const  Valor = styled.Text`
 font-size: 15px;
-font-weight: 900;
+font-weight: 500;
 color:  #DC143C;
 `;
 export const  Title = styled.Text`
 text-align: center;
 width: 100%;
+font-weight: 400;
 font-size: 13px;
-font-weight: 900;
 `;
 export const ContainerIcon = styled.Pressable`
 justify-content: center;

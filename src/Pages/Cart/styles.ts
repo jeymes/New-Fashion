@@ -22,7 +22,7 @@ background-color: white;
 
 export const ContainerTotal = styled.View`
 width: 370px;
-height: 50px;
+height: 40px;
 flex-direction: row;
 justify-content: space-between;
 align-items: center;
@@ -31,7 +31,7 @@ border: 1px solid gray;
 `;
 export const ContainerText = styled.View`
 width: 100px;
-height: 50px;
+height: 40px;
 justify-content: center;
 align-items: center;
 `;
@@ -42,7 +42,7 @@ font-size: 15px;
 `;
 export const ContainerValor = styled.View`
 width: 110px;
-height: 50px;
+height: 40px;
 border-radius: 50px;
 justify-content: center;
 align-items: center;

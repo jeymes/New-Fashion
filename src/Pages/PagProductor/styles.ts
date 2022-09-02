@@ -6,7 +6,6 @@ flex: 1;
 justify-content: space-between;
 align-items: center;
 background-color: white;
-/* background-color: #DC143C; */
 
 
 `;
@@ -15,24 +14,23 @@ width: 100%;
 height: 40%;
 justify-content: center;
 align-items: center;
-/* border: 1px solid red; */
+flex-direction: row;
 `;
 export const ContainerImagem = styled.Image`
-width: 100%;
+width: 80%;
 height: 100%;
 justify-content: center;
 align-items: center;
-/* border: 1px solid red; */
 `;
 export const SubContainerDescriptions = styled.View`
 width: 100%;
 height: 1000px;
+padding: 10px;
 justify-content: flex-start;
 align-items: center;
 border-radius: 50px;
 background-color: whitesmoke;
-/* border: 1px solid gray; */
-
+border: 0.5px solid gray;
 `;
 export const ViewProductor = styled.View`
 width: 90%;
@@ -40,41 +38,37 @@ height: 100px;
 flex-direction: row;
 justify-content: space-between;
 align-items: center;
-/* border: 1px solid red; */
 `;
 export const Contador = styled.View`
 width: 50%;
 justify-content: center;
 align-items: flex-start;
-/* border: 1px solid red; */
 `;
 export const ContainerTitle = styled.View`
 width: 50%;
 justify-content: center;
 align-items: flex-end;
-/* border: 1px solid red; */
 `;
 export const Title = styled.Text`
 font-size: 20px;
 color: black;
-font-weight: 700;
+font-weight: 500;
 `;
 export const TitleSemEstoque = styled.Text`
 font-size: 20px;
 color: red;
-font-weight: 700;
+font-weight: 500;
 `;
 export const ViewDescrption = styled.View`
 width: 90%;
 justify-content: center;
 align-items: flex-start;
-/* border: 1px solid red; */
 `;
 export const TitleDescription = styled.Text`
 font-size: 15px;
 color: #DC143C;
 padding: 5px;
-font-weight: 700;
+font-weight: 500;
 `;
 export const DescriptionProductor = styled.Text`
 width: 100%;
@@ -85,7 +79,7 @@ padding: 5px;
 export const TitleButton = styled.Text`
 font-size: 20px;
 color: white;
-font-weight: 600;
+font-weight: 500;
 /* border: 1px solid red; */
 `;
 export const SubTitle = styled.Pressable`

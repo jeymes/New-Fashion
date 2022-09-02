@@ -27,7 +27,7 @@ export default function Cart() {
                     </S.ContainerTotal>
                 </S.SubContainer>
 
-                <Button ButtonTitle='Checkout' ButtonScreenPag='login'/>
+                <Button ButtonTitle='Comprar' ButtonScreenPag='login'/>
         </S.Container>
     )
 }

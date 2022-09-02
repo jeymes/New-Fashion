@@ -51,8 +51,8 @@ color: black;
 `;
 export const ContainerQuant = styled.Pressable`
 margin-right: 10px;
-width: 40px;
-height: 70px;
+width: 30px;
+height: 50px;
 border-radius: 10px;
 justify-content: center;
 align-items: center;

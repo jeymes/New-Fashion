@@ -16,13 +16,11 @@ export default function Header() {
 
     return (<S.Container>
 
+
         <S.SubContainer>
-            <S.TextContainer>
-                Hello,
-            </S.TextContainer>
-            <S.TextSubContainer>
-                Jeymes
-            </S.TextSubContainer>
+            <S.ImagemLogo source={
+                require('../../Assets/logo.png')
+            }/>
         </S.SubContainer>
 
 

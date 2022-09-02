@@ -31,12 +31,12 @@ const renderIterms = (data) =>
                <S.ContainerText>
 
                 <S.Text>{data.item.name}</S.Text>
-                <S.Text>{data.item.price}</S.Text>
+                <S.Text>R$ {data.item.price}</S.Text>
 
                </S.ContainerText>
 
                <S.ContainerQuant>
-                <S.TextQuant>5</S.TextQuant>
+                <S.TextQuant>1</S.TextQuant>
                </S.ContainerQuant>
               
             </S.ContainerArow>

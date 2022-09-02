@@ -1,7 +1,6 @@
 import {MaterialIcons} from '@expo/vector-icons';
 import {useNavigation} from '@react-navigation/native';
 import products from '../../data/Products';
-import {ScrollView} from 'react-native';
 
 import * as S from './styles';
 
@@ -46,7 +45,7 @@ export default function Cards({
                     <S.DescriptionContainer>
                         <S.Title> {Title1} </S.Title>
                         <S.Description>
-                            <S.Valor> $ {Valor1} </S.Valor>
+                            <S.Valor> R$ {Valor1} </S.Valor>
                             <S.ContainerIcon onPress={OpenFavorite} >
                             <MaterialIcons
                             name={Icon1}

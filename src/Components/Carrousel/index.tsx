@@ -1,13 +1,16 @@
 import { FlatList } from 'react-native'
 import * as S from './styles'
+// import Dots from 'react-native-dots-pagination';
 
 type props ={
     Card: any
 }
 
-export default function Carrousel ({Card}: props){
+export default function Carrousel ({Card}:props){
+    
     return(
         <S.Container>
+           
             <FlatList
             data={Card}
             keyExtractor={(_, index) => index.toString()}

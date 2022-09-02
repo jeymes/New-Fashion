@@ -1,6 +1,6 @@
 import {ScrollView} from 'react-native';
 import Header from '../../Components/Header'
-import Carrousel from '../../Components/Carrousel'
+import Carrousel from '../../Components/Carrousel';
 import Banner from '../../Components/Banner'
 import Category from '../../Components/Category'
 import * as S from './styles'

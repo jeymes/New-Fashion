@@ -2,9 +2,9 @@ import * as S from './styles'
 import NumericInput from 'react-native-numeric-input'
 import { useState } from 'react'
 import { useNavigation } from '@react-navigation/native';
-// type ParamsProps ={
-//     item: string
-// }
+import { ScrollView } from 'react-native';
+import Carrousel from '../../Components/Carrousel';
+
 
 export function PagProductor({ route }) {
 
@@ -13,13 +13,20 @@ export function PagProductor({ route }) {
     const navigation = useNavigation();
 
     const product = route.params;
-
+    const imgs = [
+        <S.ContainerImagem source={{ uri: product.image }} />,
+        <S.ContainerImagem source={{ uri: product.image1 }} />
+    ]
     return (<S.Container>
         <S.SubContainerProductor>
-            <S.ContainerImagem source={{ uri: product.image }} />
-
+            <Carrousel Card={imgs} />
+            {/* 
+            <S.ContainerImagem source={{ uri: product.image1 }} /> */}
         </S.SubContainerProductor>
         <S.SubContainerDescriptions>
+            <S.Title>
+               {product.name}
+            </S.Title>
             <S.ViewProductor>
                 <S.Contador>
                     {product.countInstock > 0 ? (
@@ -49,13 +56,13 @@ export function PagProductor({ route }) {
                 </S.Contador>
                 <S.ContainerTitle>
                     <S.Title>
-                        $ {product.price}
+                        R$ {product.price}
                     </S.Title>
                 </S.ContainerTitle>
             </S.ViewProductor>
             <S.ViewDescrption>
                 <S.TitleDescription>
-                    Description
+                    Descrição
                 </S.TitleDescription>
                 <S.DescriptionProductor>
                     {product.description}
@@ -63,10 +70,10 @@ export function PagProductor({ route }) {
             </S.ViewDescrption>
 
             <S.SubTitle onPress={() => navigation.navigate('cart', product)}>
-            <S.TitleButton>
-                Add to Cart
-            </S.TitleButton>
-           </S.SubTitle>
+                <S.TitleButton>
+                    Adicionar ao carrinho
+                </S.TitleButton>
+            </S.SubTitle>
         </S.SubContainerDescriptions>
     </S.Container>)
 }

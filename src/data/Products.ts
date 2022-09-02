@@ -2,7 +2,7 @@ const products = [
     {
                 _id: "1",
         name: "Ténis Colorido Adidas",
-        image: "https://elements-cover-images-0.imgix.net/cae499fb-cf5c-40cc-98ec-8ecf59b235e8?auto=compress%2Cformat&fit=max&w=1019&s=94029a87e1074fb4adbc7c837d163f4d",
+        image: "https://elements-cover-images-0.imgix.net/cae499fb-cf5c-40cc-98ec-8ecf59b235e8?auto=compress%2Cformat&fit=max&w=1019&s=94029a87e1074fb4adbc7c837d163f4d", 
         description: "Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos.",
         price:"549",
         countInstock: 0,

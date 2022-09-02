@@ -9,6 +9,7 @@ export declare global {
             categories: undefined
             home: undefined
             login: undefined
+            cadastro: undefined
 
             // Notifications & Carrinho
             
