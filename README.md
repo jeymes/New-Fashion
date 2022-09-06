@@ -21,3 +21,10 @@
   <h4>TypeScript,</h4>
   <h4>JavaScript,</h4>
 </div>
+
+<div>
+  <h2>Fotos do APP</h2>
+  
+  <img src:'https://user-images.githubusercontent.com/87048226/188758012-41767ff8-4a7b-4869-a9df-f557d9f11004.jpg'/>
+
+</div>
