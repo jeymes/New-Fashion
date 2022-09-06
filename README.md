@@ -5,15 +5,11 @@
   
   <h3>Paginas:</h3>
   
-  <h4>Login,</h4> <h4>Register,</h4>
-  <h4>Home,</h4>
-  <h4>Cart,</h4>
-  <h4>Notification,</h4>
-  <h4>Checkout,</h4>
-  <h4>Favorite,</h4>
-  <h4>Category,</h4>
-  <h4>Config,</h4>
-  <h4>Productor,</h4>
+  <h4>Login, Register</h4>
+  <h4>Home, Cart</h4>
+  <h4>Notification, Config</h4>
+  <h4>Checkout, Productor</h4>
+  <h4>Favorite, Category</h4>
 </div>
 
 <div>
