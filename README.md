@@ -1,7 +1,7 @@
-<h1>New Fashion</h1>
+<h1>APP New Fashion</h1>
 
 <div>
-  <h2>Um APP E-Commerce Loja de Roupas</h2>
+  <h2>E-Commerce de Moda</h2>
   
   <h3>Paginas</h3>
   
