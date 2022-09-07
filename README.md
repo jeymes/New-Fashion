@@ -3,7 +3,7 @@
 <div>
   <h2>Um APP E-Commerce Loja de Roupas</h2>
   
-  <h3>Paginas:</h3>
+  <h3>Paginas</h3>
   
   <h4>Login, Register</h4>
   <h4>Home, Cart</h4>
@@ -19,13 +19,13 @@
   <h4> React Navigation,</h4>
   <h4> Styled Components,</h4>
   <h4>TypeScript,</h4>
-  <h4>JavaScript,</h4>
+  <h4>JavaScript</h4>
 </div>
 
 <div>
   <h2>Fotos do APP</h2>
 <div display='flex' >
-   <img width='200px' src="https://user-images.githubusercontent.com/87048226/188758012-41767ff8-4a7b-4869-a9df-f557d9f11004.jpg" />
+  <img width='200px' src="https://user-images.githubusercontent.com/87048226/188758012-41767ff8-4a7b-4869-a9df-f557d9f11004.jpg" />
   <img width='200px' src="https://user-images.githubusercontent.com/87048226/188758534-79e06417-9783-45d6-b434-a63201171729.jpg" />
   <img width='200px' src="https://user-images.githubusercontent.com/87048226/188758614-d63c2e62-083b-4b76-9af6-6cb230d17797.jpg" />
   <img width='200px' src="https://user-images.githubusercontent.com/87048226/188758640-5d5089ed-6c9d-4be2-812a-e35715ec67ca.jpg" />
